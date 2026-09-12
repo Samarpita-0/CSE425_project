@@ -45,7 +45,7 @@ their own dependencies and reference `/content/...` paths — **open them in
 ### Run the demo notebook
 ```bash
 pip install -r requirements.txt
-jupyter notebook "notebooks/demo context.ipynb"
+jupyter notebook "notebooks/demo.ipynb"
 ```
 
 Loads one preprocessed graph and runs end-to-end inference. Works on CPU.
