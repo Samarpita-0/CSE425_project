@@ -1,4 +1,4 @@
-# CSE425 — <GNN–BERT Fusion Model for Multi-Label Music Context Understanding on MusicCaps Dataset>
+# CSE425 — GNN–BERT Fusion Model for Multi-Label Music Context Understanding on MusicCaps Dataset
 
 **Course:** CSE425
 **Report:** [`report/report.pdf`](report/report.pdf)
@@ -19,7 +19,7 @@
 - **`notebooks/Task1.ipynb`** — Task 1: tag prediction pipeline + evaluation
 - **`notebooks/Task2.ipynb`** — Task 2: preprocessing + graph construction + CNN/GNN models
 - **`notebooks/Task3.ipynb`** — Task 3: fusion model, ablation, training curves
-- **`notebooks/demo context.ipynb`** — single end-to-end inference example on one preprocessed graph
+- **`notebooks/demo.ipynb`** — single end-to-end inference example on one preprocessed graph
 
 The three task notebooks were developed in **Google Colab**. They install
 their own dependencies and reference `/content/...` paths — **open them in
