@@ -45,7 +45,7 @@ their own dependencies and reference `/content/...` paths — **open them in
 ### Run the demo notebook
 ```bash
 pip install -r requirements.txt
-jupyter notebook "notebooks/demo.ipynb"
+jupyter notebook [`notebooks/demo.ipynb`](notebooks/demo.ipynb)
 ```
 
 Loads one preprocessed graph and runs end-to-end inference. Works on CPU.
@@ -57,32 +57,39 @@ Open the three task notebooks in [Google Colab](https://colab.research.google.co
 
 All figures are in [`results/figures/`](results/figures/).
 
+## 📊 Results
+
 ### Task 1 — Tag prediction pipeline
-| Figure | File |
-|--------|------|
-| Example prediction | `results/figures/Task1/task1_example_pred.png` |
-| F1 score | `results/figures/Task1/task1_f1_score.png` |
-| Per-tag confusion matrix | `results/figures/Task1/task1_per_tag_conf_mat.png` |
-| Top & bottom tags | `results/figures/Task1/task1_top_bottom_tags.png` |
-| Train/val curve | `results/figures/Task1/task1_train_val.png` |
+
+| F1 score | Per-tag confusion matrix |
+|---|---|
+| ![Task1 F1 score](results/figures/Task1/task1_f1_score.png) | ![Task1 per-tag confusion matrix](results/figures/Task1/task1_per_tag_conf_mat.png) |
+
+| Top & bottom tags | Train/val curve |
+|---|---|
+| ![Task1 top and bottom tags](results/figures/Task1/task1_top_bottom_tags.png) | ![Task1 train/val curve](results/figures/Task1/task1_train_val.png) |
+
+**Example prediction:** ![Task1 example prediction](results/figures/Task1/task1_example_pred.png)
 
 ### Task 2 — Graph construction + CNN/GNN
-| Figure | File |
-|--------|------|
-| CNN model | `results/figures/Task2/task2_cnn.png` |
-| Data distribution | `results/figures/Task2/task2_data_dist.png` |
-| GNN model | `results/figures/Task2/task2_gnn.png` |
-| Model evaluation | `results/figures/Task2/task2_model_eval.png` |
+
+| CNN model | GNN model |
+|---|---|
+| ![Task2 CNN model](results/figures/Task2/task2_cnn.png) | ![Task2 GNN model](results/figures/Task2/task2_gnn.png) |
+
+| Data distribution | Model evaluation |
+|---|---|
+| ![Task2 data distribution](results/figures/Task2/task2_data_dist.png) | ![Task2 model evaluation](results/figures/Task2/task2_model_eval.png) |
 
 ### Task 3 — Fusion model + ablation
-| Figure | File |
-|--------|------|
-| Ablation study | `results/figures/Task3/task3_ablation.png` |
-| LR vs epoch | `results/figures/Task3/task3_lr_epoch.png` |
-| Train/val curve | `results/figures/Task3/task3_train-val.png` |
+
+| Ablation study | LR vs epoch |
+|---|---|
+| ![Task3 ablation study](results/figures/Task3/task3_ablation.png) | ![Task3 LR vs epoch](results/figures/Task3/task3_lr_epoch.png) |
+
+**Train/val curve:** ![Task3 train/val curve](results/figures/Task3/task3_train_val.png)
 
 ## Notes
-
 - **Raw audio (1.4 GB) is not included.** It lives in `data/raw/musiccaps/audio/` and is `.gitignore`d. Preprocessed graphs in `data/processed/graphs/` are everything the model and demo notebook need.
 - The task notebooks use Colab-specific paths (`/content/...`). To run locally, adjust `PROJECT_ROOT` at the top of each notebook, or use the clean code in `src/`.
 - All random seeds fixed for reproducibility (see notebooks for exact values).
