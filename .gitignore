@@ -1,0 +1,18 @@
+# Raw audio (1.4 GB)
+data/raw/
+
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+venv/
+.venv/
+env/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
